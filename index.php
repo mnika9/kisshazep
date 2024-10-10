@@ -12,7 +12,6 @@
 <section id="content">
 	<div class="full-width-container block-1">
 		<div class="camera_container">
-			
 			<div id="camera_wrap">
 				<div class="item" data-src="images/index_img_slider-1.jpg" >
 					<div class="camera_caption fadeIn">
@@ -83,7 +82,7 @@
 			<div class="row">
 				<div class="grid_12">
 					<header>
-						<h2><span>Elkészült projektjeink</span></h2>
+						<h2 id="projects"><span>Elkészült projektek</span></h2>
 					</header>
 				</div>
 			</div>

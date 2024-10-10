@@ -90,7 +90,6 @@
 					</div>
 				</div>
 				<div class="grid_4">
-				
 					<div class="grid_1 alpha"><span class="element bd-ra">2</span></div>
 					<div class="grid_3">
 						<p><span>A megfelelő szakembereket </span>foglalkoztatjuk. <span>Eszközparkunk felszerelt,</span> modern és megbízható gépekkel dolgozunk</p>

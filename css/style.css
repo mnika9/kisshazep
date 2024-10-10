@@ -9,49 +9,49 @@
 										Main layout styles
 =========================================================*/
 
-body {
-  background: #fff;
-  font: 14px/24px 'Montserrat', 'Times New Roman', Times, serif;
-}
-a {
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease;
-}
-a:hover {
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease;
-}
-a[href^="tel:"] {
-  color: inherit;
-  text-decoration: none;
-}
-h2 a,
-h3 a,
-h4 a,
-h5 a {
-  color: inherit;
-  font: inherit;
-}
-h2 a:hover,
-h3 a:hover,
-h4 a:hover,
-h5 a:hover {
-  color: #d57c1b;
-}
-* {
-  -webkit-text-size-adjust: none;
-}
-::-moz-selection {
-  /* Code for Firefox */
-  color: #ffffff;
-  background: #666666;
-}
-::selection {
-  color: #ffffff;
-  background: #666666;
-}
+  body {
+    background: #fff;
+    font: 14px/24px 'Montserrat', 'Times New Roman', Times, serif;
+  }
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease;
+    }
+    a:hover {
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease;
+    }
+    a[href^="tel:"] {
+      color: inherit;
+      text-decoration: none;
+    }
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a {
+      color: inherit;
+      font: inherit;
+    }
+    h2 a:hover,
+    h3 a:hover,
+    h4 a:hover,
+    h5 a:hover {
+      color: #d57c1b;
+    }
+    * {
+      -webkit-text-size-adjust: none;
+    }
+    ::-moz-selection {
+      /* Code for Firefox */
+      color: #ffffff;
+      background: #666666;
+    }
+    ::selection {
+      color: #ffffff;
+      background: #666666;
+    }
 /*========================================================
 										HEADER styles
 =========================================================*/
@@ -94,47 +94,73 @@ h5 a:hover {
   float: right;
 }
 
+/*************** HEADER RESPONSIVE***************/
 
-
-@media only screen and (max-width: 767px) {
-  #header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #header h1
-  {
+@media only screen and (max-width: 1199px){
+  #header{ 
+    max-width: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
+    line-height: 10px;
   }
-  #header nav {
-    float: none;
-    width: 50%;
-    display: block;
+
+  #header li a{
+    font-size: 18px;
   }
- #header img{
-  display: block;
-  max-width: 100%;
-  height: auto;
- }
+
+  #header h1 img{
+    position: relative;
+    width: 130px;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+  }
+
+ #header .sf-menu li a img{
+  float: right;
+  }
 }
+
 @media only screen and (max-width:979px){
-  #header img{
-    width:120px;
+  #header a span img{
+    width:80px;
     float: left;
   }
 
   #header .sf-menu li a img{
-    background-color: red;
-    display: none;
+    float: right;
+    width: 50px;
   }
-
 }
 
+@media only screen and (max-width: 767px) {
+  #header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px 0; /* Optional: Adjust padding for mobile */
+  }
+  #header a span img{
+    width:300px;
+    float: none;
+    padding-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  
+
+  #header a span img{
+    width:150px;
+    float: none;
+    padding-left: 40px;
+  }
+ 
+ }
+
 /* Style for the image in the top-left corner of the header */
-
-
 /* Adjustments for the header if necessary */
 #header {
     position: relative;  /* Ensure relative positioning to position the image inside */
@@ -142,29 +168,28 @@ h5 a:hover {
 
 
 
-
-
 /* Main menu styles
 ========================================================*/
+
 .sf-menu {
   width: 100%;
-  text-align: center;
-  line-height: 20px;
-  margin-top: auto;
+  line-height: 10px;
   margin-top: 32px;
+
 }
 .sf-menu > li {
   display: inline-block;
   position: relative;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 .sf-menu > li > a {
   color: #1a1a1a;
   font-size: 25px;
-  margin-left: 29px;
+  margin-left: 30px;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   position: relative;
 }
 .sf-menu > li > a:hover {
@@ -174,7 +199,7 @@ h5 a:hover {
   content: "";
   height: 4px;
   width: 100%;
-  background: rgba(213, 124, 27,0.5);
+  background: #d57c1b;
   position: absolute;
   bottom: -30px;
   left: 0;
@@ -196,14 +221,15 @@ h5 a:hover {
 }
 @media only screen and (max-width: 979px) {
   .sf-menu li a{
-    padding-right: 0;
-    display: inline-block;
-    font-size: 15px;
+    margin-left: 20px;
+    font-size: 16px;
   }
   .sf-menu li img{
     justify-content: right;
   }
 }
+
+
 /* First level sub-menu styles
 ========================================================*/
 .sf-menu ul {
@@ -273,20 +299,38 @@ h5 a:hover {
     display: none;
   }
   .select-menu {
+    padding:5px;
+    border-radius: 10px;
     display: block;
-    width: 100%;
-    border-color: #d57c1b;
-    color: #666;
+    width: 300px;
+    border-color: rgba(102, 102, 102, 0.8);
+    color: rgba(102, 102, 102, 0.8);
     font-size: 16px;
-    padding: 5px;
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  @media only screen and (max-width: 479px){
+    .sf-menu {
+      display: none;
+    }
+
+    .select-menu{
+    padding:5px;
+    border-radius: 10px;
+    display: block;
+    width: 250px;
+    }
   }
 }
-/* Stuck menu styles
+
+
+/* Stuck menu styles gördülés utáni menü
 ========================================================*/
 .isStuck {
   background: #fdfdfd;
   z-index: 9;
-  padding: 0;
+  padding-top: 20px;
   border-bottom: 1px solid #d57c1b;
 }
 .isStuck nav {
@@ -313,10 +357,10 @@ h2,
 h3,
 h4 {
   font-family: 'Montserrat', sans-serif;
-  color: #000000;
+  color: #383838;
 }
 h2 {
-  font: 300 72px/72px 'Montserrat', sans-serif;
+  font: 300 55px/55px 'Montserrat', sans-serif;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -360,7 +404,7 @@ h5 {
   color: #d57c1b;
 }
 p {
-  font: 14px/24px 'Monteserrat', sans-serif;
+  font: 12px/24px 'Montserrat', sans-serif;
   color: #727070;
 }
 .full-width-container {
@@ -379,7 +423,7 @@ p {
   box-shadow: rgba(114, 112, 112, 0.2) 1px 1px 1px 1px;
   background: #ffffff;
   display: inline-block;
-  font: 24px/46px 'Open Sans', sans-serif;
+  font: 18px/46px 'Montserrat', sans-serif;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
@@ -390,7 +434,6 @@ p {
   opacity: 80%;
   color: #808181;
 }
-
 
 .bd-ra {
   border-radius: 50%;
@@ -404,13 +447,11 @@ p {
 }
 @media only screen and (max-width: 979px) {
   h2 {
-    font: 300 62px/62px 'Montserrat', sans-serif;
+    font: 300 50px/50px 'Montserrat', sans-serif;
     text-align: center;
     margin-bottom: 40px;
   }
-  h2 span:before {
-    display: none;
-  }
+
   h3 {
     font: 45px/45px 'Montserrat', sans-serif;
     text-align: center;
@@ -428,21 +469,23 @@ p {
     color: #000000;
   }
   #content p{
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
   }
+
 }
 @media only screen and (max-width: 767px) {
   h2 {
-    font: 300 52px/52px 'Montserrat', sans-serif;
+    font: 300 40px/40px 'Montserrat', sans-serif;
     text-align: center;
     margin-bottom: 40px;
+    text-decoration: underline;
   }
   h2 span:before {
     display: none;
   }
   h3 {
-    font: 45px/45px 'Montserrat', sans-serif;
+    font: 20px/20px 'Montserrat', sans-serif;
     text-align: center;
   }
   h4 {
@@ -460,10 +503,14 @@ p {
   .img_container {
     margin-bottom: 20px;
   }
+  .index .block-2 p{
+    font-size: 1rem;
+  }
+ 
 }
 @media only screen and (max-width: 479px) {
   h2 {
-    font: 300 42px/42px 'Montserrat', sans-serif;
+    font: 300 32px/32px 'Montserrat', sans-serif;
     text-align: center;
     margin-bottom: 40px;
   }
@@ -474,6 +521,7 @@ p {
     font: 35px/35px 'Montserrat', sans-serif;
     text-align: center;
   }
+
   h4 {
     font: 20px/20px 'Montserrat', sans-serif;
     text-align: center;
@@ -488,9 +536,17 @@ p {
   }
   .img_container {
     margin-bottom: 20px;
+    font-size: 12px;
   }
-}
+  .btn{
+    max-width:100px;
+  }
 
+  .index .block-2 a .btn{
+    font-size: 50px;
+  }
+
+}
 
 .index .block-1 h3{
   padding-bottom: 50px;
@@ -514,7 +570,8 @@ p {
   width: 66%;
   margin: 0 auto;
   font-size:18px;
-  line-height: 20px;
+  line-height:25px;
+
 }
 .index .block-2 .btn {
   margin-top: 33px;
@@ -526,7 +583,7 @@ p {
 }
 
 .index .block-3 {
-  padding: 123px 0 50px;
+  padding: 120px 0 50px;
   background: url(../images/index_img_par.jpg);
   background-attachment: fixed;
   background-position: center 0%;
@@ -552,66 +609,42 @@ p {
   padding: 50px 0;
   
 }
-.index .block-3 .element a{font-size:36px; }
+.index .block-3 .element a{font-size:28px; }
 
 .index .block-4 {
-  padding: 20px 0 130px;
+  padding: 120px 0 130px;
   border-bottom: 1px solid #000;
 }
-.index .block-4 h2 {
-  margin-bottom: 65px;
-  text-decoration: none;
-}
 
-
-.index .block-4 h2 ::after{
-  text-decoration: none;
-}
 .index .block-4 .owl-text {
   font-size: 32px;
   font-family: 'Montserrat', sans-serif;
   color: #312f2f;
   text-align: center;
+  line-height: 30px;
   margin-top: 40px;
   padding-bottom: 10px;
 }
-
-
-/*|||||||||||||||| PÁLYÁZATOK
-.index .block-5 {
-  background-color: rgba(128, 129, 129, 0.8);
-  padding: 120px 0 70px;
-  text-align: center;
-}
-.index .block-5 h2 {
-  margin-bottom: 60px;
-  
-}
-.index .block-5 h3 {
-  margin-bottom: 22px;
-}
-.index .block-5 .btn {
-  margin-top: 30px;
-}
-.index .block-5 p {
-  text-align: left;
-} */
-
-
 
 @media only screen and (max-width: 979px) {
   .index .block-3 h3 {
     height: 100px;
   }
   .index h1 span img{ 
-width: 120px;
-height: auto;
+  width: 120px;
+  height: auto;
 
   }}
 
 @media only screen and (max-width: 767px) {
   .index .block-3 .element {
     padding: 0;
+    
+  }
+  .index .block-3 a{
+    font-size: 20px;
+   
+
   }
   .index .block-5 article {
     margin-bottom: 60px;
@@ -627,7 +660,7 @@ height: auto;
 .index-1 .block-1 p {
   padding-right: 10px;
   line-height: 25px;
-  font-size: 1rem
+  font-size: 1rem;
 }
 .index-1 .block-1 .btn {
   margin-top: 55px;
@@ -690,24 +723,51 @@ height: auto;
   justify-content: center;
 }
 
-
-
-
 @media only screen and (max-width: 979px) and (min-width: 768px) {
   .index-1 .block-3 .bd-ra {
     width: 50px;
     height: 50px;
     line-height: 50px;
   }
+
 }
 @media only screen and (max-width: 767px) {
   .index-1 .block-3 .bd-ra {
     margin: 10px auto;
   }
   .index-1 .block-3 p {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 }
+  @media only screen and (max-width: 479px){
+    .index .block-4 .owl-text{
+      font-size: 20px;
+    }
+    .index h2 span{
+      font-size: 32px;
+     }
+     .index-1 .block-3 img{
+      display: flex;
+      margin-left: 45px;
+      margin-bottom: 70px;
+      width: 180px;
+      justify-content: center;
+    }
+    
+    .index .block-1 h3{
+      padding-bottom: 0px;
+    }
+    .index .block-3 h3 .grid-4{
+      height: 30px;
+    }
+    .index .block-3 .element a{
+      font-size: 24px;
+      height: 20px;
+    }
+   
+
+  }
+
 .index-2 .block-1 {
   padding: 70px 0 70px;
 }
@@ -718,12 +778,17 @@ height: auto;
 .index-2 .block-1 h2 span {
   font-weight: 300;
 }
+
+
+/**** PROJECTS ***/
 .index-2 .block-1 article {
   border: 1px solid #000;
   border-top: none;
   padding-top: 5px;
   margin-bottom: 95px;
+  height: auto;
 }
+
 .index-2 .block-1 h4 {
   background: #474747;
   color: #ffffff;
@@ -731,28 +796,34 @@ height: auto;
   margin-top: 0;
   margin-bottom: 20px;
 }
+
 .index-2 .block-1 p {
   padding: 0 32px 25px;
 }
+
 .index-2 .block-1 .img_container {
   margin-bottom: 0 !important;
 }
+
 .index-3 .block-1 {
   padding: 120px 0 75px;
 }
+
 .index-3 .block-1 h2 {
   text-align: left;
   margin-bottom: 63px;
 }
+
 .index-3 .block-1 h5 {
   text-align: left;
   margin-bottom: 25px;
 }
+
 .index-3 .block-1 .h5__mod {
   margin-bottom: 10px;
   font-weight: 400;
- 
 }
+
 .index-3 .block-1 li {
   padding: 11px 0;
 }
@@ -814,20 +885,20 @@ height: auto;
   color: #1a1a1a;
 }
 .index-4 .block-1 {
-  padding: 120px 0 15px;
+  padding: 80px 0px 15px;
 }
 .index-4 .block-1 h2 {
   margin-bottom: 65px;
+  
 }
-.index-4 .block-1 #map-canvas {
-  height: 430px;
-}
+
 .index-4 .block-2 {
   padding: 70px 0;
+  text-align: left;
 }
 .index-4 .block-2 h2 {
-  font-size: 60px;
-  text-align: left;
+
+  text-align: center;
 }
 .index-4 .block-2 .address {
   margin-top: 40px;
@@ -840,7 +911,7 @@ height: auto;
   color: #d57c1b;
 }
 @media only screen and (max-width: 767px) {
-  .index-4 h2 {
+  .index-4  .block-1 h2 {
     margin-top: 30px;
   }
 }
@@ -855,13 +926,6 @@ height: auto;
 #footer a {
   color: inherit;
 }
-#footer h2{
-  text-decoration: none;
- 
-}
-#footer h2 span{
-  font-weight: 300;
-}
 
 
 #footer a:hover {
@@ -871,17 +935,17 @@ height: auto;
   text-align: center;
 }
 #footer .copyright .btn {
-  width: 94px;
-  height: 94px;
-  line-height: 94px;
-  font-size: 60px;
+  width: 84px;
+  height: 84px;
+  line-height: 84px;
+  font-size: 50px;
   color: #423e3e;
   background: #fff;
   border: none;
   margin: 30px 50px;
 }
 #footer .copyright .btn span {
-  line-height: 94px;
+  line-height: 84px;
 }
 #footer .copyright .btn:hover {
   background: #423e3e;
@@ -906,11 +970,9 @@ height: auto;
     margin: 30px 25px;
     font-size: 2.5rem;
   }
-  #footer h2{
-    font-size: 3.5rem;
-  }
-
 }
+
+
 @media only screen and (max-width: 479px) {
   #footer .copyright .btn {
     display: block;
@@ -920,25 +982,7 @@ height: auto;
   #footer h2{
     font-size: 2rem;
   }
-  .index .block-3 h2 {
-    font-size: 2rem;
-  }
-
-
 }
-
-
-/*========================================================
-										IMPRESSZUM
-=========================================================*/
-#footer pre a{
-  color: #474747;
-}
-#footer pre a:hover{
-  color: #ffffff;
-}
-
-
 
 /*========================================================
 										Widget styles
@@ -947,13 +991,14 @@ height: auto;
 ========================================================*/
 #toTop {
   display: none;
-  background: #d57c1b;
+  background: rgba(213, 124, 27, 0.9);
   text-decoration: none;
   position: fixed;
   bottom: 80px;
   right: 30px;
   overflow: hidden;
   border: none;
+  border-radius: 73px;
   color: #fff;
   width: 73px;
   height: 73px;
@@ -975,43 +1020,18 @@ height: auto;
     display: none !important;
   }
 }
-/*========================================================
-								RESPONSIVE LAYOUTS STYLES 
-=========================================================*/
-@media only screen and (max-width: 1199px) {
-  .sample {
-    height: auto;
-    /*delete this class*/
-  }
-}
-@media only screen and (max-width: 979px) {
-  .sample {
-    height: auto;
-    /*delete this class*/
-  }
-}
-@media only screen and (max-width: 767px) {
-  .sample {
-    height: auto;
-    /*delete this class*/
-  }
-}
-@media only screen and (max-width: 480px) {
-  .sample {
-    height: auto;
-    /*delete this class*/
-  }
-}
-@media only screen and (max-width: 320px) {
-  .sample {
-    height: auto;
-    /*delete this class*/
-  }
-}
-/*Core variables and mixins*/
-
 
 /**my css*/
+@media only screen and (min-width:979px){
+
+.index-2 .block-1 p{
+  font-size: 14px;
+ }
+.index-2 .block-1 article{
+  height: 300px;
+}
+}
+
 .index-1 .block-3 p span{
   font-weight: 600;
   color: #d57c1b;
@@ -1044,11 +1064,11 @@ height: auto;
 }
 
 .index-5 img{
- width: 100%;
-
+max-width: 1170px;
 }
+
  #tabla{
-display: flex;
+  display: flex;
  max-width: 330px;
  float: right;
  margin-top: 100px;
@@ -1056,48 +1076,118 @@ display: flex;
  box-shadow: 3px 3px grey;
 }
 
+/********   979PX ********/
+
+
+@media only screen and (max-width:979px){
+  .index-2 .block-1 article{
+    height:450px;
+  }
+} 
+
 @media only screen and (max-width: 476px){
   
-#tabla{
+  #tabla{
   max-width: 200px;
   display:flex;
   height: auto;
   margin: 20px auto;
   float: none;
   text-align: center;
+  }
+  .index .block-2 span{
+  display: block;
+  font-size: 28px;
+  justify-content: center;
+  text-align: center;
 }
 
-  
+  .index .block-2 p{
+  display: flex;
+  font-size: 12px;
 }
-
-
+}
 
 /*|||||||||||||||||| IMPRESSZUM |||||||||||||||||||*/
 
-.index-6 .block-1 {
-  padding: 120px 0 125px;
-  font-size: 12px;
+.index-6 .block-1{
+  margin-bottom: 80px;
 }
-.index-6 .block-1 h2 span {
-font-weight: 300;
+.index-6 h2{
+  margin-top: 80px;
 }
-.index-6 .block-1 h4 {
-  margin-bottom: 30px;
+
+.index-6 h3{
   text-align: left;
+  font-size: 40px;
   text-decoration: underline;
+  padding-bottom: 15px;
+  padding-top:30px;
 }
-.index-6 .block-1 span {
-font-weight: 600;
-}
-
-.index-6 .block-1 li {
-  padding-right: 10px;
+.index-6 p{
+  font-size: 20px;
+  color: #383838;
   line-height: 35px;
-  font-size: 1.2rem;
-  list-style-type: none;
+}
+.index-6 h2 span{
+  font-weight: 600;
 }
 
+@media only screen and (max-width:476px){
+  .index-6 h2{
+    font-size: 20px;
+  }
+  .index-6 h3{
+    font-size: 20px;
+  }
+  .index-6 h2 span{
+    font-size: 18px;
+  }
+ 
 
-.index-6 .block-1 .btn {
-  margin-top: 55px;
+}
+/*||||||||||||||||||   END   IMPRESSZUM |||||||||||||||||||*/
+
+
+/***** MAP CONTAINER*******/
+
+.map-container {
+  position: relative;
+  width: 100%; /* 100% szélesség */
+  padding-top: 56.25%; /* 16:9 arány */
+  overflow: hidden; /* Kizárja az overflow-t */
+}
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* 100% magasság */
+  border: 0;
+}
+
+/********* lenti logo ***************/
+
+#lentilogo{
+  width: 250px;
+  height: auto;
+  float: right;
+}
+
+@media only screen and (max-width:767px){
+#lentilogo{
+display: block;
+margin-right:100px;
+ 
+}
+}
+@media only screen and (max-width:479px){
+  #lentilogo{
+  margin-top:25px;
+  display: block;
+  margin-right:40px;
+  max-width: 180px;
+  height: auto;
+  
+  }
 }

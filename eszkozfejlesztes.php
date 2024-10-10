@@ -13,7 +13,7 @@
 							<h2><span>Pályázatok</span></h2>
 						</header>
 					</div>
-					<div class="eszkoz">
+					<div class="">
 						<div class="grid_8">
 							<h4>GINOP_PLUSZ-1.2.2-22-2022-02140</h4>
 							<li><span>Projekt azonosítószáma: </span>GINOP_PLUSZ-1.2.2-22-2022-02140</li>
@@ -24,14 +24,14 @@
 							
 						</div>
 						<div class="grid_4">
-						<img id="tabla" src="images/tabla.jpg"  alt="" title="Támogatás tábla">
+						<a href="/images/kisshazep.jpg" title="Támogatás tábla" ><img id="tabla" src="images/tabla.jpg"  alt="" title="Támogatás tábla"></a>
 						</div>
 						<div class="grid_12"><p>A Gazdaságfejlesztési és Innovációs Operatív Program Plusz keretén belül a Miniszterelnökség, mint Támogató által meghirdetett GINOP Plusz-1.2.2-22 felhívásra a Kissházép Szolgáltató Betéti Társaság által benyújtott „A Kissházép Bt. eszközfejlesztése” című támogatási kérelmet pozitívan bírálta, támogatásra alkalmasnak ítélte, a Projekt megvalósítására 6.913.270 Ft vissza nem térítendő támogatást nyert el.
 								A Projekt keretében egy darab Bobcat E19 minikotrógép és egy STD 50cm Klac típusú mélyásókanál került beszerzésre, mely a kivitelezések során a munkafolyamat lerövidítését eredményezi. Ennek következtében a feszes határidők könnyebben tarthatók, valamint a korábban beszerzett és a jelen pályázati támogatással beszerzett gépek használatával nagyobb megrendelések is elvállalhatók. A meglévő eszközpark új eszközzel való kiegészítése által kapacitás növekedés valósult meg, nőtt a társaság versenyképessége, a munkafolyamatok szervezettebbé és hatékonyabbá váltak.
 								A Projekt a Magyar Korány és az Európai Unió támogatásával, a Gazdaságfejlesztési és Innovációs Operatív Program Plusz keretében valósulhatott meg
 							</p></div>
 					</div>
-					<img src="images/MFF.jpg" alt="">
+					<div class="grid_12" style="width: 500px; height:auto" ><img src="images/MFF.jpg" alt=""></div>
 				</div>
 			</div>
 		</div>
@@ -81,7 +81,7 @@
 
 
 	<!--=======footer=================================-->
-	<?php include("footer.php"); ?>
+	<?php include("footer.php");?>
 
 	<!--=======touch galery=================================-->
 	<script>

@@ -15,15 +15,15 @@
 					</header>
 				</div>
 				<div class="grid_12">
-				<h4>Vállalkozás adatai:</h4>
-						<li><span>Cégnév: </span> Kissházép Szolgáltató Betéti Társaság</li>
-                        <li><span>Székhely: </span>5561 Békésszentandrás, Wesselényi utca 8</li>
-                        <li><span>Postacím: </span>5561 Békésszentandrás, Wesselényi utca 8</li>
-                        <li><span>Adószám: </span>24920469-2-04</li>
-                        <li><span>Cégjegyzékszám: </span>04-06-009155</li>
-						<li><span>Telefonszám: </span>+36 70 424-7437</li>
-						<li><span>Bankszámlaszáma: </span>K&H Bank Zrt. 813 Szarvas 10408131-50526884-72661000</li>
-						<li><span>Email cím: </span>kisshazep@gmail.com</li>
+				<h3>Vállalkozás adatai:</h3>
+				<p><span>Cégnév:</span> Kissházép Szolgáltató Betéti Társaság</p>
+                       <p><span>Székhely: </span>5561 Békésszentandrás, Wesselényi utca 8</p>
+                       <p><span>Postacím: </span>5561 Békésszentandrás, Wesselényi utca 8</p>
+                       <p><span>Adószám: </span>24920469-2-04</p>
+                       <p><span>Cégjegyzékszám: </span>04-06-009155</p>
+						<p><span>Telefonszám: </span>+36 70 424-7437</p>
+						<p><span>Bankszámlaszáma: </span>K&H Bank Zrt. 813 Szarvas 10408131-50526884-72661000</p>
+						<p><span>Email cím: </span>kisshazep@gmail.com</p>
 					<!--<a href="#" class="btn">Szolgáltatások</a>-->
 				</div>
 			</div>
@@ -31,16 +31,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="grid_12">
-				<h4>Tárhelyszolgáltató adatai:</h4>
-						<li><span>Cégnév: </span>Rackhost Zrt.</li>
-                        <li><span>Székhely: </span>6722 Szeged, Tisza Lajos körút 41.</li>
-                        <li><span>Adószám: </span>25333572-2-06</li>
-                        <li><span>Cégjegyzékszám: </span>06-10-000489</li>
-						<li><span>Telefonszám: </span>+36 1 445 1200</li>
-						<li><span>Bankszámlaszáma: </span>Cib Bank:	10700433-67330115-51100005</li>
-						<li><span>Email cím: </span>info@rackhost.hu</li>
-						<li><span>Nyilvántartásba vevő cégbíróság: </span>Szegedi Törvényszék Cégbírósága</li>
-						<li><span>Illetékes kamara: </span>Csongrád Megyei Kereskedelmi és Iparkamara</li>
+				<h3>Tárhelyszolgáltató adatai:</h3>
+						<p><span>Cégnév: </span>Rackhost Zrt.</p>
+                        <p><span>Székhely: </span>6722 Szeged, Tisza Lajos körút 41.</p>
+                        <p><span>Adószám: </span>25333572-2-06</p>
+                        <p><span>Cégjegyzékszám: </span>06-10-000489</p>
+						<p><span>Telefonszám: </span>+36 1 445 1200</p>
+						<p><span>Bankszámlaszáma: </span>Cib Bank:	10700433-67330115-51100005</p>
+						<p><span>Email cím: </span>info@rackhost.hu</p>
+						<p><span>Nyilvántartásba vevő cégbíróság: </span>Szegedi Törvényszék Cégbírósága</p>
+						<p><span>Illetékes kamara: </span>Csongrád-Csanád Vármegyei Kereskedelmi és Iparkamara</p>
 					<!--<a href="#" class="btn">Szolgáltatások</a>-->
 				</div>
 			</div>

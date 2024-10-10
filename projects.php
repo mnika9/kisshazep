@@ -18,7 +18,7 @@
 						<div class="img_container"><a href="images/index-2_img-1-big.jpg"><img src="images/index-2_img-1.jpg" alt="projects"></a></div>
 						<article>
 							<h4>Aranyszarvas </h4>
-							<p>Az <span>Aranyszarvas Panzió és Étterem</span> az Arborétum közvetlen szomszédságában található. A közvetlen vízparton elhelyezkedő szálláshely bővítésének keretében készítettük el a 3. számú apartmanházat, melyben 20 szobát, és ugyanannyi fürdőszobát alakítottunk ki.</p>
+							<p>Az <span>Aranyszarvas Panzió és Étterem</span> az Arborétum szomszédságában található. A közvetlen vízparton elhelyezkedő szálláshely bővítésének keretében készítettük el a 3. számú apartmanházat, melyben 20 szobát, és ugyanannyi fürdőszobát alakítottunk ki.</p>
 						</article>
 					</div>
 					<div class="grid_4">

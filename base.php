@@ -3,9 +3,9 @@
 	<head>
 	<title>KISSHÁZÉP</title>
 	<meta charset="utf-8">
-	<meta name = "format-detection" content = "telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/kiss.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/camera.css">
@@ -22,7 +22,7 @@
 	<script src="js/jquery.stellar.js"></script>
 	<script src="js/touchTouch.jquery.js"></script>
 	<script src="js/script.js"></script>
-	<script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+	<!--<script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>-->
 	<!--[if (gt IE 9)|!(IE)]><!-->
 	<script src="js/jquery.mobile.customized.min.js"></script>
 	<script src="js/wow.js"></script>

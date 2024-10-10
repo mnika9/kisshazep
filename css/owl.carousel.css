@@ -102,7 +102,7 @@
 	content: "";
 	font-family: "FontAwesome";
 	font-size: 30px;
-	color: #7b7979;
+	color: #ffffff;
 	display: block;
 }
 .owl-carousel .owl-next:before {
@@ -115,7 +115,7 @@
 }
 .owl-carousel .owl-prev:hover:before,
 .owl-carousel .owl-next:hover:before { 
-	color: #d94d3a;
+	color: #d57c1b;
 }
 @media only screen and (max-width: 980px) {
 	.owl-carousel .owl-controls {
@@ -135,5 +135,6 @@
 	.owl-carousel .owl-controls {
 		top: 52px;
 	}
+	
 
 }
